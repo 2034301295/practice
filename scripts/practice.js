@@ -3,7 +3,7 @@ let myHeading=document.querySelector('h1')
 function setUserName(){
     let myName=prompt('请输入你的名字');
     localStorage.setItem('name',myName);
-    if(myName==='fufu'){
+    if(myName==='fufu'||myName==='holiofox'){
     myHeading.textContent='yes,约约 love '+myName;}
     else{myHeading.textContent='NO,约约 does not love '+myName}
 }

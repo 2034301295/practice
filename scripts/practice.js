@@ -1,11 +1,11 @@
 let myButton=document.querySelector('button')
-let myHeading=document.querySelector('h1')
+let myHeading = document.querySelector("h1");
 function setUserName(){
     let myName=prompt('请输入你的名字');
     localStorage.setItem('name',myName);
     if(myName==='fufu'||myName==='holiofox'){
-    myHeading.textContent='yes,约约 love '+myName;}
-    else{myHeading.textContent='NO,约约 does not love '+myName}
+    alert('yes,约约 love '+myName)}
+    else{alert('NO,约约 does not love '+myName)}
 }
 if(!localStorage.getItem('name')){
     setUserName();
